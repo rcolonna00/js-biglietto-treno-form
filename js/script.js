@@ -8,8 +8,6 @@ bottoneGenera.addEventListener('click', function() {
     var userName = userNameGenerator.value;
     //console.log(userName); 
 
-    
-
     //leggo l'offerta eta scelta e faccio if
     var etàUtenteGenerator = document.getElementById( 'fascia-età' );
     var etàUtente = etàUtenteGenerator.value;
@@ -63,4 +61,8 @@ function getRandomNumber(min, max) {
     var randomNumber = Math.floor(Math.random() * (max - min) ) + min;
     return randomNumber
 }
-console.log(bottoneGenera)
+
+
+function demoDisplay() {
+    document.getElementById("myP1").style.display = "none";
+  }
