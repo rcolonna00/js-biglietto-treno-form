@@ -1,0 +1,89 @@
+/*background color #b91450*/
+/*color text e border #c74272*/
+/*colore grigio*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b91450;
+    text-align: center;
+    color: #c74272
+}
+
+/* Biglietto da Stampare */
+h2{
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.biglietto-stampato,
+.generatore-biglietto{
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px black;
+}
+
+.generatore-biglietto-column{
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+select,
+input{
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.bottoni{
+    padding-bottom: 15px;
+}
+
+button{
+    background-color: lightgray;
+    color: #c74272;
+    border-color: #c74272;
+    padding: 5px;
+}
+/* Fine Biglietto da Stampare */
+
+/* Biglietto Stampato */
+.biglietto-stampato{
+    text-align: left;
+    color: black;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.biglietto{
+    display: flex;
+    border: 1px solid lightgray;
+    margin-top: 15px;
+}
+
+.left_col{
+    background-color: lightgray;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+
+.right_col{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.biglietto-stampato span{
+    display: inline-block;
+    padding-top: 25px;
+}
+/* Fine Biglietto Stampato */

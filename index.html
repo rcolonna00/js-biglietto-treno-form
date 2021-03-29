@@ -10,6 +10,83 @@
 </head>
 <body>
     
+    <h2>Calcola il prezzo del tuo biglietto</h2>
+    <!-- Dati del biglietto -->
+    <div class="generatore-biglietto">
+        
+        <div class="generatore-biglietto-column">
+            <label for="nome-utente-biglietto">Nome Utente</label>
+            <br>
+            <input id="nome-utente-biglietto" type="text">
+        </div>
+
+        <div class="generatore-biglietto-column">
+            <label for="km-biglietto">km da percorrere</label>
+            <br>
+            <input id="km-biglietto" type="number">
+        </div>
+
+        <div class="generatore-biglietto-column">
+            <label for="fascia-età">fascia d'età</label>
+            <br>
+            <select id="fascia-età">
+                <option value=""></option>
+                <option value="Minorenne">Minorenne</option>
+                <option value="Maggiorenne">Maggiorenne</option>
+                <option value="Over 65">Over 65</option>
+            </select>
+        </div>
+
+        <div class="bottoni">
+
+            <button id="bottone-genera">Genera</button>
+            <button id="bottone-annulla">Annulla</button>
+
+        </div>
+
+    </div>
+    <!-- Fine dati del biglietto -->
+
+    <!-- Biglietto stampato -->
+    <h2>Il tuo biglietto</h2>
+    <div class="biglietto-stampato">
+        <h3>DETTAGLIO PASSEGGERI</h3>
+        <div class="biglietto">
+            <div class="left_col">
+                <strong>Nome passeggero</strong>
+                <span id="stampa-user-name"></span>
+            </div>
+            <div class="right_col">
+                <div>
+                    Offerta
+                    <br>
+                    <span id="stampa-offerta-utente"></span>
+                </div>
+                <div>
+                    Carrozza
+                    <br>
+                    <span id=""></span>
+                </div>
+                <div>
+                    Codice CP
+                    <br>
+                    <span id=""></span>
+                </div>
+                <div>
+                    Costo Biglietto
+                    <br>
+                    <span id=""></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Fine biglietto stampato -->
+
+
+
+    
+
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>
