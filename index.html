@@ -17,19 +17,19 @@
         <div class="generatore-biglietto-column">
             <label for="nome-utente-biglietto">Nome Utente</label>
             <br>
-            <input id="nome-utente-biglietto" type="text">
+            <input id="nome-utente-biglietto" type="text" placeholder="inserisci il tuo nome">
         </div>
 
         <div class="generatore-biglietto-column">
             <label for="km-biglietto">km da percorrere</label>
             <br>
-            <input id="km-biglietto" type="number">
+            <input id="km-biglietto" type="number" placeholder="km da percorrere">
         </div>
 
         <div class="generatore-biglietto-column">
             <label for="fascia-età">fascia d'età</label>
             <br>
-            <select id="fascia-età">
+            <select id="Fascia-età">
                 <option value=""></option>
                 <option value="Minorenne">Minorenne</option>
                 <option value="Maggiorenne">Maggiorenne</option>
@@ -49,38 +49,43 @@
 
     <!-- Biglietto stampato -->
     <h2>Il tuo biglietto</h2>
-    <div class="biglietto-stampato">
-        <h3>DETTAGLIO PASSEGGERI</h3>
-        <div class="biglietto">
-            <div class="left_col">
-                <strong>Nome passeggero</strong>
-                <span id="stampa-user-name"></span>
-            </div>
-            <div class="right_col">
-                <div>
-                    Offerta
-                    <br>
-                    <span id="stampa-offerta-utente"></span>
-                </div>
-                <div>
-                    Carrozza
-                    <br>
-                    <span id="stampa-codice-carrozza"></span>
-                </div>
-                <div>
-                    Codice CP
-                    <br>
-                    <span id="stampa-codice-cp"></span>
-                </div>
-                <div>
-                    Costo Biglietto
-                    <br>
-                    <span id="stampa-prezzo-biglietto"></span>
-                </div>
 
+    <div id="biglietto-stampato" class="hidden">
+        <div  class="biglietto-stampato">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="biglietto">
+                <div class="left_col">
+                    <strong>Nome passeggero</strong>
+                    <span id="stampa-user-name"></span>
+                </div>
+                <div class="right_col">
+                    <div>
+                        Offerta
+                        <br>
+                        <span id="stampa-offerta-utente"></span>
+                    </div>
+                    <div>
+                        Carrozza
+                        <br>
+                        <span id="stampa-codice-carrozza"></span>
+                    </div>
+                    <div>
+                        Codice CP
+                        <br>
+                        <span id="stampa-codice-cp"></span>
+                    </div>
+                    <div>
+                        Costo Biglietto
+                        <br>
+                        <span id="stampa-prezzo-biglietto"></span>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+
+        
     <!-- Fine biglietto stampato -->
 
 

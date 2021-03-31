@@ -13,6 +13,16 @@ body{
     color: #c74272
 }
 
+.hidden{
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.show{
+    opacity: 1;
+    transition: 0.1s;
+}
+
 /* Biglietto da Stampare */
 h2{
     text-transform: uppercase;

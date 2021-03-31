@@ -52,6 +52,28 @@ bottoneGenera.addEventListener('click', function() {
     document.getElementById( 'stampa-codice-carrozza' ).innerHTML = codiceCarrozza;
     document.getElementById( 'stampa-codice-cp' ).innerHTML = codiceCp;
     document.getElementById( 'stampa-prezzo-biglietto' ).innerHTML = prezzoBiglietto;
+
+    document.getElementById('biglietto-stampato').className = 'show';
+});
+
+//rimaniamo in ascolto sul bottone annulla
+var bottoneAnnulla = document.getElementById('bottone-annulla');
+bottoneAnnulla.addEventListener('click', function() {
+    //nascondiamo il biglietto
+    document.getElementById('biglietto-stampato').className = 'hidden';
+
+    //svuotiamo gli input
+    document.getElementById( 'nome-utente-biglietto' ).value = '';
+    document.getElementById( 'km-biglietto' ).value = '';
+    document.getElementById( 'fascia-età' ).value = '';
+
+    //svuotiamo gli altri elementi
+    document.getElementById( 'stampa-user-name' ).innerHTML = '';
+    document.getElementById( 'stampa-offerta-utente' ).innerHTML = '';
+    document.getElementById( 'stampa-codice-carrozza' ).innerHTML = '';
+    document.getElementById( 'stampa-codice-cp' ).innerHTML = '';
+    document.getElementById( 'stampa-prezzo-biglietto' ).innerHTML = '';
+
 });
 
 //funzioni
@@ -62,7 +84,3 @@ function getRandomNumber(min, max) {
     return randomNumber
 }
 
-
-function demoDisplay() {
-    document.getElementById("myP1").style.display = "none";
-  }
